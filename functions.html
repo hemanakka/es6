@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //   let demo1=(x,y)=>{
+      //     console.log(x+y)
+      // }
+      // console.log(demo1(6,7));
+      // let list=[1,2,3]
+      // list.forEach(x => console.log(x*2));
+     // list.map(x => console.log(x*2));
+     // objects
+     let employees=
+     {
+         name:"reddy",
+         age:20,
+         designation:"junior software developer"
+     }
+console.log(employees.designation);
+
+// destruction of objects
+let {name,age,designation}=employees;
+console.log(name);
+console.log(designation);
+let a=5;b=6;
+[b,a]=[a,b]
+console.log(a);
+console.log(b);
+
+
+// destructuion of arrays
+let employees=["reddy","run","stop"]
+let [name1,name2,name3]=employee;
+console.log(name1);
+console.log(name2);
+console.log(name3);
+
+
+//spread operators
+let[name1,...remainList]=employees;
+console.log(name1);
+console.log(remainList);
+//console.log(name3);
+
+// rest parameter
+
+function addition(x,y,...remainData){
+    console.log(x);
+    console.log(y);
+    console.log(remainData);
+}
+addition(6,8,7,9);
+
+ </script>
+</body>
+</html>
